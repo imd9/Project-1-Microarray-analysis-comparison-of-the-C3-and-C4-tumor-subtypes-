@@ -47,7 +47,7 @@ write.table(batch_effect_correction, file="/usr4/bf527/preshita/project-1-swissc
 
 
 #PCA 
-
-
+scaled_data <- t(scale(t(batch_effect_correction)))
+pca_output<-prcomp(scaled_data, scale=FALSE, center=FALSE)
 
 
