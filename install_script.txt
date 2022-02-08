@@ -1,8 +1,0 @@
-# For BiocManager
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(version = "3.14")
-
-# To install packages through BiocManager
-BiocManager::install(c("GenomicFeatures", "AnnotationDbi"))
-
