@@ -4,6 +4,7 @@ library(affyPLM)
 library(sva)
 library(AnnotationDbi)
 library(hgu133plus2.db)
+library(ggplot2)
 
 # loading the data by setting the working directory
 setwd('/usr4/bf527/preshita/project-1-swisscheese/samples')
@@ -49,5 +50,10 @@ write.table(batch_effect_correction, file="/usr4/bf527/preshita/project-1-swissc
 #PCA 
 scaled_data <- t(scale(t(batch_effect_correction)))
 pca_output<-prcomp(scaled_data, scale=FALSE, center=FALSE)
+rotated_pca<-as.data.frame(pca_output$rotation)
+summary(pca_output) #helps to find out percent variability. Don't know about $importance attribute and what it falls under
+#plotting PCA results
+# pc1<- rotated_pca$PC1
+# pc2<- rotated_pca$PC2
 
-
+ggplot(data = rotated_pca, mapping = aes(x = PC1, y = PC2)) +geom_point()+labs(title = 'PCA plot', x= 'PC1 11.47%', y='PC2 8.409%')
