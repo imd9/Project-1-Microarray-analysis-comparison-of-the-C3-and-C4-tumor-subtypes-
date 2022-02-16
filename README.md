@@ -4,11 +4,11 @@ A brief description of what this repository is for and what it contains
 
 # Contributors
 
-Monica Roberts: Data curator
+Monica Roberts: Data curator (monicapr@bu.edu)
 
-Preshita Dave: Programmer
+Preshita Dave: Programmer (preshita@bu.edu)
 
-Italo Duran: Analyst
+Italo Duran: Analyst (duran01@bu.edu)
 
 # Repository Contents
 
