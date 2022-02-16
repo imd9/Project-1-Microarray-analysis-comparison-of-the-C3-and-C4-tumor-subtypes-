@@ -24,7 +24,7 @@ data.matrix = exprs(data.rma)
 
 # https://www.bioconductor.org/packages/devel/bioc/vignettes/affyPLM/inst/doc/QualityAssess.pdf
 Pset <- fitPLM(data, normalize=TRUE, background=TRUE)
-# RLE(Pset,main="RLE for CRC dataset")
+
 
 
 stats_RLE<-data.frame(RLE(Pset,type="stats"))
