@@ -5,7 +5,9 @@ A brief description of what this repository is for and what it contains
 # Contributors
 
 Monica Roberts: Data curator
+
 Preshita Dave: Programmer
+
 Italo Duran: Analyst
 
 # Repository Contents
