@@ -4,8 +4,10 @@ A brief description of what this repository is for and what it contains
 
 # Contributors
 
-List contributor names and github user names, or email addresses if desired
+Monica Roberts: Data curator
+Preshita Dave: Programmer
+Italo Duran: Analyst
 
 # Repository Contents
 
-Provide a brief description of each script/code file in this repo, what it does, and how to execute it
+The programmer.R script executes the necessary commands for assessing the quality of the data as well as preprocessing steps such as normalization of the data through the RMA method. 
