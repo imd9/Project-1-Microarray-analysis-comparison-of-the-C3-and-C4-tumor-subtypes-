@@ -14,15 +14,33 @@ Preshita Dave: Programmer (preshita@bu.edu)
 Italo Duran: Analyst (duran01@bu.edu)
 
 # Repository Contents
-# Programmer
-The programmer.R script executes the necessary commands for assessing the quality of the data as well as preprocessing steps such as normalization of the data through the RMA method. 
-Input: CEL files
-Output: RMA Normalized and batch effect corrected expression intensity values. 
-
-# Analyst
-
-Input: Output after running the programmer.R script
-Output: 
-
 # Usage 
 R script.R
+
+# Programmer
+The programmer.R script executes the necessary commands for assessing the quality of the data as well as preprocessing steps such as normalization of the data through the RMA method. 
+
+Input: 
+
+134 CEL files
+
+Output: 
+
+RMA Normalized and batch effect corrected expression intensity values
+
+# Analyst
+The analysis_final.R script performs noise filtering and dimension reduction (based off on the PCA results in the programmer.R script), followed by hierarchial clustering and subtype discovery. 
+
+Input: 
+
+Output after running the programmer.R script
+
+Output: 
+
+Gene matrices after passing the data through 3 filters
+
+Expression matrices after passing various filters from the chi-square and the Welch-t test
+
+Heatmap to visualize the differentially expressed genes in the C3 and C4 subtypes
+
+
